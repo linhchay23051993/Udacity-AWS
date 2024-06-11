@@ -11,5 +11,5 @@ phases:
       - docker tag coworking-checkin:$CODEBUILD_BUILD_NUMBER 089597541794.dkr.ecr.us-east-1.amazonaws.com/coworking-checkin:$CODEBUILD_BUILD_NUMBER
   post_build:
     commands:
-      - docker push 089597541794.dkr.ecr.us-east-1.amazonaws.com/coworking-checkin:$CODEBUILD_BUILD_NUMBER
+      - docker push XXX.dkr.ecr.us-east-1.amazonaws.com/coworking-checkin:$CODEBUILD_BUILD_NUMBER
 
