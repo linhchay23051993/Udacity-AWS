@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - aws --version
-      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 089597541794.dkr.ecr.us-east-1.amazonaws.com
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 08XXX597541794.dkr.ecr.us-east-1.amazonaws.com
   build:
     commands:
       - docker build -t coworking-checkin:$CODEBUILD_BUILD_NUMBER .
